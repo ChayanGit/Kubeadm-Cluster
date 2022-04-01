@@ -1,6 +1,6 @@
 #!/bin/bash
 
-kubeadm init > /root/master/initlog
+kubeadm init >> /root/master/initlog
 
 if [$? == 0]
 then
