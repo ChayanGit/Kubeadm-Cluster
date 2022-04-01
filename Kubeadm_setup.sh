@@ -14,12 +14,12 @@ sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 
 sudo apt install docker.io -y > /dev/null
 
-if [$? == 0]
-then
+# if [$? == 0]
+# then
   usermod -aG docker ubuntu
-else
-  echo "Docker installation failed"
-fi
+#else
+  #echo "Docker installation failed"
+#fi
 
 systemctl restart docker
 systemctl enable docker.service
