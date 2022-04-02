@@ -2,13 +2,7 @@
 
 kubeadm init >> /root/master/initlog
 
-if [$? == 0]
-then
-    initMasterPane
-else
-    echo "Master Node not working"
-    echo "restart Kubelet and reset kubeadm"
-    kubeadm reset -y
+initMasterPane
 
 
 initMasterPane (){

@@ -29,9 +29,10 @@ sudo apt-get update && apt-get install -y kubelet kubeadm kubectl
 chmod 700 /etc/docker
 rm rf /etc/docker/daemon.json
 touch /etc/docker/daemon.json
-echo "{"exec-opts": ["native.cgroupdriver=systemd"]}" > /etc/docker/daemon.json
+# Do the folllowing step manuallt in the path /etc/docker/daemon.json
+#echo "{"exec-opts": ["native.cgroupdriver=systemd"]}" > /etc/docker/daemon.json
 
-sudo systemctl daemon-reload
-sudo systemctl restart docker
-sudo systemctl restart kubelet
+#sudo systemctl daemon-reload
+#sudo systemctl restart docker
+#sudo systemctl restart kubelet
 
