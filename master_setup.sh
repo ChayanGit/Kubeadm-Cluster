@@ -2,7 +2,7 @@
 
 kubeadm init >> /root/master/initlog
 
-initMasterPane
+#initMasterPane
 
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
