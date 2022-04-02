@@ -12,7 +12,7 @@ sudo apt-get update
 swapoff -a
 sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 
-sudo apt install docker.io -y > /dev/null
+sudo apt install docker.io -y
 
 # if [$? == 0]
 # then
